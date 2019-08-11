@@ -11,10 +11,10 @@
   },
   "scripts": {
     "start": "yarn storybook",
-    "build": "rollup -c",
     "lint": "eslint ./src",
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006",
+    "build": "rollup -c",
     "build-storybook": "build-storybook -c .storybook -o public"
   },
   "husky": {
