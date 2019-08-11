@@ -2,7 +2,16 @@
   "name": "react-storybook-rollup-starter-kit",
   "version": "0.1.0",
   "author": "Jenish Chandracim",
+  "main": "build",
   "private": true,
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "rollup -c",
+    "lint": "eslint ./src",
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -c .storybook -o public"
+  },
   "dependencies": {
     "classnames": "^2.2.6",
     "node-sass": "^4.12.0",
@@ -11,12 +20,37 @@
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.0"
   },
-  "scripts": {
-    "start": "yarn storybook",
-    "lint": "eslint ./src",
-    "test": "react-scripts test",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -c .storybook -o public"
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.1.10",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-info": "^5.1.10",
+    "@storybook/addon-knobs": "^5.1.10",
+    "@storybook/addon-links": "^5.1.10",
+    "@storybook/addon-notes": "^5.1.10",
+    "@storybook/addons": "^5.1.10",
+    "@storybook/react": "^5.1.10",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb": "18.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "rollup": "^1.19.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-img": "^1.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.2.0"
   },
   "browserslist": {
     "production": [
@@ -29,25 +63,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@storybook/addon-actions": "^5.1.10",
-    "@storybook/addon-console": "^1.2.1",
-    "@storybook/addon-info": "^5.1.10",
-    "@storybook/addon-knobs": "^5.1.10",
-    "@storybook/addon-links": "^5.1.10",
-    "@storybook/addon-notes": "^5.1.10",
-    "@storybook/addons": "^5.1.10",
-    "@storybook/react": "^5.1.10",
-    "babel-loader": "^8.0.6",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "eslint": "6.1.0",
-    "eslint-config-airbnb": "18.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0"
   }
 }
