@@ -22,7 +22,6 @@ Each component you create should follow the same setup as per the `<Button />` c
 - `src/components/inde.js` file to include all components to be exported
 
 The above configuration is needed to ensure both storybook and rollup are correctly executed.<br>
-Additionally you will have to modify the project name in `package.json` to contain your library name and include the correct npm credentials/scope into the `.npmrc` (more details on this can be found on the platform used to host the library e.g: [npmjs](https://docs.npmjs.com/))
 
 ## Available Scripts
 
@@ -53,6 +52,14 @@ The exports are built inside `build` folder which can be used to publish to `npm
 ### `yarn build-storybook`
 
 Builds static files for storybook site. This is so it can be deployed as the docs source for the component library.
+
+## Next steps
+
+It is left to the development team who is utilising this starter kit to:<br>
+
+- Modify the project name in `package.json` to contain your library name and decide where the library will be hosted in the cloud and accordingly include the correct npm credentials/scope into the `.npmrc` (e.g hosting platoform: [npmjs](https://docs.npmjs.com/))
+
+- Decide on their releasing strategy and fully use the [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and adding corresponding trace of changes in the `CHANGELOG.md` file using the [Keep a Changelog Method](https://keepachangelog.com/en/1.0.0/)
 
 
 
