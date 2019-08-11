@@ -1,9 +1,14 @@
 {
   "name": "react-storybook-rollup-starter-kit",
   "version": "0.1.0",
+  "description": "This project is to be used as a starter kit for building React component using Storybook and Rollup",
   "author": "Jenish Chandracim",
   "main": "build",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jenishchandracim/react-storybook-rollup-starter-kit.git"
+  },
   "scripts": {
     "start": "yarn storybook",
     "build": "rollup -c",
