@@ -1,0 +1,34 @@
+@import '../../styles/variables/colors.scss';
+
+.button {
+  display: flex;
+  font-size: .875em;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  padding: .75rem 1rem;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary {
+  background: $primary;
+  color: $light;
+}
+
+.secondary {
+  background: $secondary;
+  color: $light;
+}
+
+.success {
+  background: $success;
+  color: $light;
+}
+
+.warning {
+  background: $warning;
+  color: $dark;
+}
